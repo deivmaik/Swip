@@ -17,6 +17,7 @@ export const GlobalStyle = createGlobalStyle`
   
     html {
         font-size: 62.5%;
+        /* This makes it easier to start using rem instead of px , now 1rem = 10px */
         box-sizing: border-box;
         scroll-behavior: smooth;
         font-family: "Poppins", sans-serif;

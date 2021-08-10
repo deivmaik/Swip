@@ -5,6 +5,9 @@ import {
    Wrapper,
    Menu,
    LogoWrapper,
+   Styledli,
+   CtaWrapper,
+   Cta
   } from './styles/header.styles';
 
 const Header = () => {
@@ -14,11 +17,13 @@ const Header = () => {
                 <Logo/>
             </LogoWrapper>
             <Menu>
-                <li>¿como funciona?</li>
-                <li>compra un swip</li>
-                <li>contacto</li>
-                <li>Ingresa a tu swip</li>
+                <Styledli>¿como funciona?</Styledli>
+                <Styledli>compra un swip</Styledli>
+                <Styledli>contacto</Styledli>
             </Menu>
+            <CtaWrapper>
+                <Cta>Ingresa a tu swip</Cta>
+            </CtaWrapper>
         </Wrapper>
     )
 }
