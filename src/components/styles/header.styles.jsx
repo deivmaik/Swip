@@ -41,7 +41,7 @@ export const Cta = styled.p`
 
 font-weight: bold;
 font-size: 1.6rem;
-color:  ${colors.Text};
+color:  ${colors.DarkTone};
 
 
 `
