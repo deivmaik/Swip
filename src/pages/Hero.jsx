@@ -1,18 +1,30 @@
-import React from 'react'
+import React , { Component } from 'react'
 import Intro from '../components/Intro'
 import Product from '../components/Product'
 import { Container, Wrapper } from './styles/hero.styles'
 
-const Hero = () => {
+export default class Hero extends Component {
 
-    return (
-        <Wrapper>
-            <Container>
-                <Intro/>
-                <Product/>
-            </Container>
-        </Wrapper>
-    )
-}
-
-export default Hero
+    render() {
+       let width = window.innerWidth;
+       if (width > 768) {
+         return (
+           <Wrapper >
+                <Container>
+                    <Intro/>
+                    <Product/>
+                </Container>
+           </Wrapper>
+         );
+       } else {
+         return (
+           <Wrapper>
+               <Container>
+                    <Intro/>
+               </Container>
+           </Wrapper>
+         );
+       }
+    }
+  
+  }

@@ -34,3 +34,5 @@ export const GlobalStyle = createGlobalStyle`
         list-style-type: none;
     }
 `
+
+

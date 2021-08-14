@@ -1,8 +1,11 @@
 import styled from 'styled-components'
-import { colors } from './global'
+import { media , colors } from '../../global'
 
-export const Wrapper = styled.section`
-max-width: 75vh;
+export const Wrapper = styled.div`
+${media.desktop}{
+    max-height: 75vh;
+    max-width: 35%;
+}
 `
 
 export const Title = styled.h1`

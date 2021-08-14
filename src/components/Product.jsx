@@ -1,11 +1,14 @@
 import React from 'react'
 import { ReactComponent as Phones} from '../svg/product.svg'
 
+import { Wrapper } from './styles/product.styles'
+
+
 const Product = () => {
     return (
-        <div>
+        <Wrapper>
             <Phones/>
-        </div>
+        </Wrapper>
     )
 }
 

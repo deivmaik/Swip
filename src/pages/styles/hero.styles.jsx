@@ -1,12 +1,16 @@
-import styled from 'styled-components'
-import { colors } from './global'
+import styled  from 'styled-components'
+import { media } from '../../global'
+
 
 
 export const Wrapper = styled.section`
 margin: 0 2rem;
 `
 export const Container = styled.div`
-    @media screen and (min-width: 1366px) {
-        display : flex;
-    }
+${media.desktop}{
+    display: flex;
+    justify-content : space-around;
+    align-items : center;
+}
+    
 `
