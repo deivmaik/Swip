@@ -1,7 +1,13 @@
 import React , { Component } from 'react'
 import Intro from '../components/Intro'
 import Product from '../components/Product'
-import { Container, Wrapper } from './styles/hero.styles'
+
+import { HeroDesc} from '../data/Data'
+
+import { 
+  Container,
+   Wrapper 
+  } from './styles/hero.styles'
 
 export default class Hero extends Component {
 
@@ -11,7 +17,8 @@ export default class Hero extends Component {
          return (
            <Wrapper >
                 <Container>
-                    <Intro/>
+                  {/* Calling HeroDesc from Data.js here helps send the data to the components */}
+                    <Intro {...HeroDesc}/>
                     <Product/>
                 </Container>
            </Wrapper>
@@ -20,7 +27,7 @@ export default class Hero extends Component {
          return (
            <Wrapper>
                <Container>
-                    <Intro/>
+                    <Intro {...HeroDesc}/>
                </Container>
            </Wrapper>
          );
