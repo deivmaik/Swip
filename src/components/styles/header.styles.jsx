@@ -1,48 +1,62 @@
 import styled from 'styled-components'
-import { colors } from '../../global'
+import { colors, media } from '../../global'
+import { NavLink as Link } from "react-router-dom";
+import {FaBars} from 'react-icons/fa'
 
-
-export const Wrapper = styled.div`
-display: flex;
-justify-content: space-between;
-
-max-height: 10rem;
+export const Wrapper = styled.nav`
+ background: #fff;
+  height: 8rem;
+  display: flex;
+  justify-content: space-around;
+  z-index: 10;
+  ${media.desktop}{
+    padding: 0 10rem;
+    justify-content: space-between;
+    
+}
 `
-
-export const LogoWrapper = styled.svg`
-height: 5rem;
-flex-basis: 40%;
-
-`
-export const Menu = styled.ul`
-display: flex;
-flex-basis: 40%;
-/* This flex property matches the 50% remaining from the original flex container in the main wrapper */
-justify-content: space-evenly;
-
-@media screen and (max-width: 700px) {
-    display: none ;
+// Its imported as Link so its able to be styled with styled-components.
+export const NavLink = styled(Link)`
+  color: #fff;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  height: 100%;
+  cursor: pointer;
+  /* This is the activeStyle class  */
+  &.active {
+    color: ${colors.activeColor};
   }
-/* Just a quick solution for hiding the menu, needs to be edited later */
-`
-
-export const Styledli = styled.li`
-color: black;
-`
-export const CtaWrapper = styled.div`
-flex-basis: 20%;
-
-@media screen and (max-width: 700px) {
-    display: none ;
+  ${media.desktop}{
+    flex-basis: 100%;
   }
-/* Just a quick solution for hiding the cta on desktop, needs to be edited later */
+  
 `
 
-export const Cta = styled.p`
-
-font-weight: bold;
-font-size: 1.6rem;
-color:  ${colors.DarkTone};
-
-
+// This will be used later for the hamburger menu 
+export const Bars = styled(FaBars)`
+  display: block;
+    /* position: absolute; */
+    top: 0;
+    right: 0;
+    transform: translate(-100%, 75%);
+    font-size: 1.8rem;
+    cursor: pointer;
+  ${media.desktop}{
+    display: none;
+  color: #fff;
+  }
 `
+
+
+export const NavBtn = styled.nav`
+  display: flex;
+  align-items: center;
+  margin-left: 5rem;
+  ${media.desktop}{
+  margin-left: 0;
+}
+`
+
+
+

@@ -3,27 +3,23 @@ import { ReactComponent as Logo} from '../svg/swiplogo.svg'
 
 import {
    Wrapper,
-   Menu,
+   NavLink,
    LogoWrapper,
-   Styledli,
-   CtaWrapper,
-   Cta
+   NavBtn,
   } from './styles/header.styles';
+import Navbar from './Navbar';
+import  Button  from './Button';
 
 const Header = () => {
     return (
         <Wrapper>
-            <LogoWrapper>
+            <NavLink to='/'>
                 <Logo/>
-            </LogoWrapper>
-            <Menu>
-                <Styledli>¿como funciona?</Styledli>
-                <Styledli>compra un swip</Styledli>
-                <Styledli>contacto</Styledli>
-            </Menu>
-            <CtaWrapper>
-                <Cta>Ingresa a tu swip</Cta>
-            </CtaWrapper>
+            </NavLink> 
+            <Navbar/>
+            <NavBtn>
+                <Button/>
+            </NavBtn>
         </Wrapper>
     )
 }

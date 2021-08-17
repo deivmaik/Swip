@@ -6,7 +6,7 @@ export const Button = styled.button`
 margin-top: 10%;
 width: 25rem;
 height: 6.5rem;
-background-color:  ${colors.DarkTone};
+background-color:  ${colors.darkTone};
 border: none;
 border-radius: 2rem;
 
