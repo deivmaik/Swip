@@ -4,6 +4,8 @@ export const colors = {
     background:'#2D3332',
     buttonText: '#F3F3F3',
     darkTone: '#030303',
+    dark: '#000',
+    light: '#fff',
     secondaryText: '#464646',
     activeColor: '#15cdfc'
 }

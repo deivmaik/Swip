@@ -5,8 +5,15 @@ export const HeroDesc = {
     subtitle:'Facebook, Instagram, Linkedin...',
     subtitleTwo:'Lo que quieras, a un solo swip.',
     hero:'¿como funciona? >'
+};
+
+// Exporting objects for Sliders
+export const SliderText = {
+    message:'Comparte todas tus redes sociales'
 }
 
-export const CTA = {
-    
+// Exporting objects for ContactInfo
+export const ContactInfo = {
+    email:'contacto@miswip.com',
+    whatsapp:'+569123456789'
 }
