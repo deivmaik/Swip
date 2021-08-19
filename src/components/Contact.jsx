@@ -23,7 +23,7 @@ function Contact ({
     return (
         <Wrapper>
             <NavLink to='/'>
-                <Logo/>
+                <Logo fill='white'/>
             </NavLink> 
             <BasicInfo>
                 <BasicInfoText><HiOutlineMail/>{email.toLowerCase()}</BasicInfoText>

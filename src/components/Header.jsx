@@ -13,7 +13,7 @@ const Header = () => {
     return (
         <Wrapper>
             <NavLink to='/'>
-                <Logo/>
+                <Logo fill='black'/>
             </NavLink> 
             <Navbar/>
             <NavBtn>
