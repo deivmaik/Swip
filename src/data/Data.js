@@ -29,3 +29,10 @@ export const FAQText = {
     r3:'Swip no necesita conexion a internet, la unica persona que necesita una conexion a internet es quien recibe tus datos, en caso no tengan, pueden hacerlo una vez esten conectados.',
     end:'¿Tienes mas preguntas? Haz click aqui',
 }
+
+// Message
+
+export const MessageText = {
+    text:'Lanzamiento en Bolivia solo por invitacion de referido, registrate haciendo',
+    span:'click aqui',
+}

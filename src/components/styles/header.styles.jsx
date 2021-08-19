@@ -4,7 +4,7 @@ import { NavLink as Link } from "react-router-dom";
 import {FaBars} from 'react-icons/fa'
 
 export const Wrapper = styled.nav`
- background: #fff;
+  background: ${colors.light};
   height: 8rem;
   display: flex;
   justify-content: space-around;
@@ -22,7 +22,6 @@ export const NavLink = styled(Link)`
   align-items: center;
   text-decoration: none;
   height: 100%;
-  cursor: pointer;
   /* This is the activeStyle class  */
   &.active {
     color: ${colors.activeColor};

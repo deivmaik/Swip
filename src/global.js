@@ -7,7 +7,8 @@ export const colors = {
     dark: '#000',
     light: '#fff',
     secondaryText: '#565555',
-    activeColor: '#15cdfc'
+    activeColor: '#15cdfc',
+    important: '#03E2DD'
 }
 
 // Screen sizes to be used in the media variable 
