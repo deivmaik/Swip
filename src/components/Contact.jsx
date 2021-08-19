@@ -1,18 +1,17 @@
-import React from 'react'
+import React, { Fragment } from 'react'
+import { Link } from 'react-router-dom'
 import { ReactComponent as Logo} from '../svg/swiplogo.svg'
 import SocialMedia from './SocialMedia'
-
 
 import { HiOutlineMail } from 'react-icons/hi'
 import { RiWhatsappLine } from 'react-icons/ri'
 
 import {
     Wrapper,
-    NavLink,
-    BasicInfo,
-    BasicInfoText,
-    Legal,
-    LegalText
+    LogoContainer,
+    Title,
+    ContactContainer,
+    Text
    } from './styles/contact.styles';
 
 // This function has information from data.js inside the data folder
@@ -22,18 +21,28 @@ function Contact ({
   }) {
     return (
         <Wrapper>
-            <NavLink to='/'>
+            <LogoContainer to='/'>
                 <Logo fill='white'/>
-            </NavLink> 
-            <BasicInfo>
-                <BasicInfoText><HiOutlineMail/>{email.toLowerCase()}</BasicInfoText>
-                <BasicInfoText><RiWhatsappLine/>{whatsapp.toLowerCase()}</BasicInfoText>
-            </BasicInfo>
+            </LogoContainer> 
+            {/* It could be empty brackets without the Fragment, it's just there for semantic purposes */}
+            <Fragment>
+                <Title>Contacto</Title>
+                <Link to='#' >
+                    <Text><HiOutlineMail/>{email.toLowerCase()}</Text>
+                </Link>
+                <Link to='#'>
+                    <Text><RiWhatsappLine/>{whatsapp.toLowerCase()}</Text>
+                </Link>
+            </Fragment>
             <SocialMedia/>
-            <Legal>
-                <LegalText>Terminos de uso</LegalText>
-                <LegalText>Politicas de privacidad</LegalText>
-            </Legal>
+            <Fragment>
+                <Title>Legal</Title>
+                <Link to='#' >
+                    <Text>Terminos de uso</Text>
+                </Link><Link to='#' >
+                    <Text>Politicas de privacidad</Text>
+                </Link>
+            </Fragment>
         </Wrapper>
     )
 }

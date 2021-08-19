@@ -16,7 +16,7 @@ export default class Footer extends Component {
                 <SlidingText {...SliderText}/>
                 {/* <FAQ/> */}
                 <Contact {...ContactInfo}/>
-                <p>Hecho con &#10084;&#65039; en Bolivia</p>
+                <p style={{color:'white'}}>Hecho con &#10084;&#65039; en Bolivia</p>
             </Wrapper>
         )
     }

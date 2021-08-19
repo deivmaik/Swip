@@ -6,7 +6,7 @@ export const colors = {
     darkTone: '#030303',
     dark: '#000',
     light: '#fff',
-    secondaryText: '#464646',
+    secondaryText: '#565555',
     activeColor: '#15cdfc'
 }
 

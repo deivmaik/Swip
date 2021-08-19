@@ -15,5 +15,5 @@ export const SliderText = {
 // Exporting objects for ContactInfo
 export const ContactInfo = {
     email:'contacto@miswip.com',
-    whatsapp:'+569123456789'
+    whatsapp:'+569 123456789'
 }
