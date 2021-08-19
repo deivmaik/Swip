@@ -5,9 +5,12 @@ import { Link as Redirect } from "react-router-dom";
 
 export const Wrapper = styled.div`
 padding: 0 2rem;
+margin: 5rem 2rem 0 2rem;
   ${media.desktop}{
     padding: 0 10rem;
     justify-content: space-between;
+    margin: 0 2rem 0 2rem;
+
 }
 `
 // Its imported as Link so its able to be styled with styled-components.
