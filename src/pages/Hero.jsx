@@ -26,9 +26,9 @@ export default class Hero extends Component {
        } else {
          return (
            <Wrapper>
-               <Container>
-                    <Intro {...HeroDesc}/>
-               </Container>
+             <Container>
+              <Intro {...HeroDesc}/>
+             </Container>
            </Wrapper>
          );
        }
