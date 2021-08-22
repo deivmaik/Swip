@@ -6,8 +6,8 @@ const Steps = () => {
     return (
         <div>
             <InstructionsCard/>
-            {/* <InstructionsCard/>
-            <InstructionsCard/> */}
+            <InstructionsCard/>
+            <InstructionsCard/>
         </div>
     )
 }
