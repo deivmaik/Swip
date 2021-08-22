@@ -20,6 +20,7 @@ export default class App extends Component {
           <Header/>
           <Hero />
           <HIW/>
+          <div style={{background: '#fff', height: '100vh'}}>section </div>
           <Footer/>
         </Router>
       </div>

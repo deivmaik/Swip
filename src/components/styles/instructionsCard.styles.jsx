@@ -1,9 +1,8 @@
 import styled from "styled-components";
-import { colors } from '../../global'
+import { colors, media } from '../../global'
 
 export const Card = styled.div`
 display: grid; 
-height : 100%;
 background-color: ${colors.dark};
 grid-template-rows: 1fr 1fr;
 grid-template-columns: 1fr 1fr 1fr;
@@ -28,17 +27,21 @@ align-items : center;
 justify-content : center;
 /* Background styles */
 margin: 0;
-padding: 1.5rem 3rem ;
+padding: 1rem 2.5rem ;
 background: rgba(255, 255, 255, 0.2);
 backdrop-filter: blur(12px);
 border-radius: 10px;
 /* Font styles */
 font-weight: 600;
-font-size: 2.8rem;
+font-size: 2rem;
 line-height: 160%;
 letter-spacing: 0.055em;
 color: #FFFFFF;
 
+${media.regular}{
+    padding: 1.5rem 3rem ;
+    font-size: 2.8rem;
+}
 `
     
 export const Title = styled.p`

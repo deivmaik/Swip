@@ -1,14 +1,16 @@
 import React from 'react'
-import Instructions from '../components/Instructions'
 import SideContent from '../components/SideContent'
+import Instructions from '../components/Instructions'
+import Video from '../components/Video'
 
-import { Wrapper } from './styles/hiw.styles'
+import { Wrapper} from './styles/hiw.styles'
 
 const HIW = () => {
     return (
         <Wrapper>
             <SideContent/>
             <Instructions/>
+            <Video/>
         </Wrapper>
     )
 }

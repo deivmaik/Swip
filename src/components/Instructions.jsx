@@ -1,13 +1,15 @@
 import React from 'react'
-import Steps from './Steps'
-import Video from './Video'
+import InstructionsCard from './InstructionsCard'
+
+import {Wrapper} from './styles/instructions.styles'
 
 const Instructions = () => {
     return (
-        <div>
-            <Steps/>
-            <Video/>
-        </div>
+        <Wrapper>
+            <InstructionsCard/>
+            <InstructionsCard/>
+            <InstructionsCard/>
+        </Wrapper>
     )
 }
 

@@ -1,6 +1,7 @@
-import React from 'react'
+import React, {Fragment } from 'react'
 import {  
     Wrapper,
+    Container,
     Title,
     Subtitle
  } from './styles/sideContent.styles'
@@ -8,8 +9,10 @@ import {
 const SideContent = () => {
     return (
         <Wrapper>
-            <Title>Asi funciona!</Title>
-            <Subtitle>En unos simples pasos aprende cuan facil es usar tu swip y compartir tus datos al mundo!</Subtitle>
+            <Container>
+                <Title>Asi funciona!</Title>
+                <Subtitle>En unos simples pasos aprende cuan facil es usar tu swip y compartir tus datos al mundo!</Subtitle>
+            </Container>
         </Wrapper>
     )
 }
