@@ -4,6 +4,7 @@ import Header from '../src/components/Header';
 import Hero from './pages/Hero'
 import Footer from './pages/Footer'
 import TopMessage from './components/TopMessage';
+import HIW from './pages/HIW';
 
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
@@ -18,6 +19,7 @@ export default class App extends Component {
           <TopMessage {...MessageText}/>
           <Header/>
           <Hero />
+          <HIW/>
           <Footer/>
         </Router>
       </div>
