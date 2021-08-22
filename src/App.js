@@ -5,6 +5,7 @@ import Hero from './pages/Hero'
 import Footer from './pages/Footer'
 import TopMessage from './components/TopMessage';
 import HIW from './pages/HIW';
+import Swips from './pages/Swips';
 
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
@@ -20,7 +21,7 @@ export default class App extends Component {
           <Header/>
           <Hero />
           <HIW/>
-          <div style={{background: '#fff', height: '100vh'}}>section </div>
+          <Swips/>
           <Footer/>
         </Router>
       </div>
