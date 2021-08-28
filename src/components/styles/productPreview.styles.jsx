@@ -6,6 +6,12 @@ export const Wrapper = styled.div`
 width: 30rem;
 height: 38rem;
 margin:0 auto;
+
+${media.desktop}{
+  width: 50vh;
+  margin  : 0;
+  border: 1px solid ${colors.lightGray};
+}
 `
 
 export const Img = styled.img`

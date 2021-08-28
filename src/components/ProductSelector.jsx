@@ -1,10 +1,16 @@
 import React from 'react'
+import SingleProduct from './SingleProduct'
+
+import {
+    Wrapper
+} from './styles/productSelector.styles'
 
 const ProductSelector = () => {
     return (
-        <div>
-            
-        </div>
+        <Wrapper>
+            <SingleProduct/>
+           
+        </Wrapper>
     )
 }
 

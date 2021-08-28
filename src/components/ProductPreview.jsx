@@ -3,7 +3,6 @@ import Preview from '../png/preview.png'
 
 import { 
     Wrapper,
-    ImgWrapper,
     Img,
     Button
  } from './styles/productPreview.styles'
