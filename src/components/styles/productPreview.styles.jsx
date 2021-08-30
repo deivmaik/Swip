@@ -26,12 +26,12 @@ export const Button = styled(ButtonBase)`
 margin-top: -2%;
 height: 6rem;
 width: 30rem;
-background: #EFA6A2;
+background: ${colors.darkTone};
 border-radius: 0 0 1rem 1rem;
+/* Text styles */
+color: ${colors.light};
 &:hover {
     background: ${colors.darkTone};
     color: ${colors.light};
   }
-/* Text styles */
-color: black;
 `

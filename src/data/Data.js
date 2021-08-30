@@ -36,3 +36,32 @@ export const MessageText = {
     text:'Lanzamiento en Bolivia solo por invitacion de referido, registrate haciendo',
     span:'click aqui',
 }
+
+// swip tags
+
+export const swips = [
+    {
+        img:'https://i.ibb.co/4gQ7w7g/white-Swip.png',
+        id: 0,
+        // img:'../png/pink.png',
+        name:'swip blanco'
+    },
+    {
+        img:'https://i.ibb.co/mtdMWZY/darkSwip.png',
+        id: 1,
+        // img:'../png/pink.png',
+        name:'swip oscuro'
+    },
+    {
+        img:'https://i.ibb.co/fQZZ6mJ/pinkSwip.png',
+        id: 2,
+        // img:'../png/pink.png',
+        name:'swip rosa'
+    },
+    {
+        img:'https://i.ibb.co/5RPvmHV/greySwip.png',
+        id: 3,
+        // img:'../png/pink.png',
+        name:'swip diamante'
+    }
+]

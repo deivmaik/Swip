@@ -1,15 +1,29 @@
 import React from 'react'
-import SingleProduct from './SingleProduct'
+
+import { swips } from '../data/Data'
 
 import {
-    Wrapper
+    SwipWrapper,
+    Img,
+    Text,
+    Wrapper,
+    Container,
+    Title
 } from './styles/productSelector.styles'
 
-const ProductSelector = () => {
+function ProductSelector () {
+    
+    const displaySwips = swips.map((swip, index) =>
+    <SwipWrapper key={swip.id}>
+        <Img  src={swip.img} alt={swip.name} width="200"/>
+        <Text>{swip.name}</Text>
+    </SwipWrapper>
+    )
+
     return (
         <Wrapper>
-            <SingleProduct/>
-           
+            <Title>Selecciona tu swip</Title>
+            <Container> {displaySwips}</Container>
         </Wrapper>
     )
 }
