@@ -8,9 +8,8 @@ height: 38rem;
 margin:0 auto;
 
 ${media.desktop}{
-  width: 50vh;
+padding-top: 0;
   margin  : 0;
-  border: 1px solid ${colors.lightGray};
 }
 `
 
@@ -18,6 +17,10 @@ export const Img = styled.img`
 margin: 0 ;
 border-radius: 1rem 1rem 0 0 ;
 
+${media.desktop}{
+  margin-top: 12%;
+  scale: 1.2;
+}
 `
 
 // Imported from Button component as ButtonBase
@@ -34,4 +37,8 @@ color: ${colors.light};
     background: ${colors.darkTone};
     color: ${colors.light};
   }
+
+${media.desktop}{
+  scale: 1.2;
+}
 `
