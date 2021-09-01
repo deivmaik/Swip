@@ -78,7 +78,5 @@ display : flex;
 align-items : center;
 font-size: 1.6rem;
 line-height: 160%;
-color: #BBBBBB;
-
-
+color: ${colors.secondaryText};
 `

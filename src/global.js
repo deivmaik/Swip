@@ -1,14 +1,18 @@
 
 // Colors
 export const colors = {
+  // Background colors
     background:'#2D3332',
-    buttonText: '#F3F3F3',
     darkTone: '#030303',
+   
+    // Text colors
     dark: '#000',
     light: '#fff',
-    secondaryText: '#565555',
+    secondaryText: '#BBBBBB',
+    grey: '#565555',
     activeColor: '#15cdfc',
-    important: '#03E2DD'
+    important: '#03E2DD',
+    buttonText: '#F3F3F3',
 }
 
 // Screen sizes to be used in the media variable 

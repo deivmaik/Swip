@@ -7,7 +7,6 @@ margin: 0 0;
 background-color: ${colors.dark};
 
 ${media.desktop}{
-
     padding: 0 ;
 
     display: grid;
@@ -59,7 +58,7 @@ text-align: center;
 font-size: 1.6rem;
 line-height: 160%;
 letter-spacing: 0.055em;
-color: #BBBBBB;
+color: ${colors.secondaryText};
 
 ${media.regular}{
     padding-bottom: 4rem;

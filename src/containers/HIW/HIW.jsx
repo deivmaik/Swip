@@ -6,11 +6,12 @@ import Video from "../../components/Video/Video";
 import { Wrapper } from "./hiw.styles";
 
 const HIW = () => {
+
   return (
     <Wrapper>
-      <SideContent />
+      <SideContent  />
       <Instructions />
-      <Video />
+      <Video  />
     </Wrapper>
   );
 };
