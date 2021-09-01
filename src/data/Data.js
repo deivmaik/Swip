@@ -68,7 +68,7 @@ export const swips = [
 
 export const howItWorks = { 
     title:'Asi funciona!',
-    text:'En unos simples pasos aprende cuan facil es usar tu swip y compartir tus datos al mundo!',
+    text:'En unos simples pasos aprende cuan facil es usar tu swip y compartir tus redes sociales con solo un toque.',
 }
 
 export const instructions = [

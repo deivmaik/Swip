@@ -6,7 +6,6 @@ display: grid;
 background-color: ${colors.dark};
 grid-template-rows: 1fr 1fr 1fr;
 grid-template-columns: 1fr 1fr 1fr;
-border: 0.1rem solid ${colors.light};
 `
 export const Container = styled.div`
 /* Flex aligns it to center */
@@ -18,7 +17,6 @@ grid-row-start: 1;
 grid-column-start: 1;
 grid-row-end: 4;
 grid-column-end: 2;
-border: 0.1rem solid ${colors.light};
 `
 
 export const Number = styled.p`
