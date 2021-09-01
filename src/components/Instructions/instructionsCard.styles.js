@@ -4,22 +4,22 @@ import { colors, media } from '../../global'
 export const Card = styled.div`
 display: grid; 
 background-color: ${colors.dark};
-grid-template-rows: 1fr 1fr;
+grid-template-rows: 1fr 1fr 1fr;
 grid-template-columns: 1fr 1fr 1fr;
+border: 0.1rem solid ${colors.light};
 `
 export const Container = styled.div`
-/* Display flex to align it to the center */
+/* Flex aligns it to center */
 display : flex;
 align-items : center;
 justify-content : center;
-/* This grid is to position the container inside the layout */
+/* Grid to position the container inside the layout */
 grid-row-start: 1;
 grid-column-start: 1;
-grid-row-end: 3;
+grid-row-end: 4;
 grid-column-end: 2;
-
+border: 0.1rem solid ${colors.light};
 `
-    
 
 export const Number = styled.p`
 display : flex;
@@ -30,13 +30,12 @@ margin: 0;
 padding: 1rem 2.5rem ;
 background: rgba(255, 255, 255, 0.2);
 backdrop-filter: blur(12px);
-border-radius: 10px;
+border-radius: 1rem;
 /* Font styles */
 font-weight: 600;
 font-size: 2rem;
 line-height: 160%;
-letter-spacing: 0.055em;
-color: #FFFFFF;
+color: ${colors.light};
 
 ${media.regular}{
     padding: 1.5rem 3rem ;
@@ -57,17 +56,21 @@ padding: 0.5rem;
 display : flex;
 align-items : center;
 font-weight: 600;
-font-size: 1.8rem;
+font-size: 1.6rem;
 line-height: 160%;
-letter-spacing: 0.055em;
-color: #FFFFFF;
+color: ${colors.light};
+
+${media.regular}{
+    font-size: 1.8rem;
+    margin-top: 1rem;
+}
 `
 
 export const Subtitle = styled.p`
 /* Grid styles */
 grid-row-start: 2;
 grid-column-start: 2;
-grid-row-end: 3;
+grid-row-end: 4;
 grid-column-end: 4;
 /* Background styles */
 margin: 0;
@@ -77,6 +80,7 @@ display : flex;
 align-items : center;
 font-size: 1.6rem;
 line-height: 160%;
-letter-spacing: 0.055em;
 color: #BBBBBB;
+
+
 `

@@ -65,3 +65,29 @@ export const swips = [
         name:'swip diamante'
     }
 ]
+
+export const howItWorks = { 
+    title:'Asi funciona!',
+    text:'En unos simples pasos aprende cuan facil es usar tu swip y compartir tus datos al mundo!',
+}
+
+export const instructions = [
+    {
+        id: 0,
+        number: 1,
+        title:'Crea tu perfil de usuario',
+        desc:'Elige un nombre de usuario unico para representarte online.'
+    },
+    {
+        id: 0,
+        number: 2,
+        title:'Agrega tus redes sociales',
+        desc:'Solo necesitas agregar los nombres de usuario que usas.'
+    },
+    {
+        id: 0,
+        number: 3,
+        title:'Comparte tu swip',
+        desc:'Apoya tu swip al telefono que deseas compartir tu informacion.'
+    }
+]

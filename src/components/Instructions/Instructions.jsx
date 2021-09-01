@@ -1,16 +1,10 @@
 import React from "react";
-import InstructionsCard from "../InstructionsCard/InstructionsCard";
+import InstructionsCard from "./InstructionsCard";
 
 import { Wrapper } from "./instructions.styles";
 
-const Instructions = () => {
-  return (
-    <Wrapper>
-      <InstructionsCard />
-      <InstructionsCard />
-      <InstructionsCard />
-    </Wrapper>
-  );
-};
+function Instructions() {
+  return <Wrapper>{InstructionsCard}</Wrapper>;
+}
 
 export default Instructions;

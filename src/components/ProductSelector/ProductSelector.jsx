@@ -22,7 +22,7 @@ function ProductSelector() {
   return (
     <Wrapper>
       <Title>Selecciona tu swip</Title>
-      <Container> {displaySwips}</Container>
+      <Container>{displaySwips}</Container>
     </Wrapper>
   );
 }
