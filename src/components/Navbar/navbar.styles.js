@@ -6,7 +6,11 @@ export const NavMenu = styled.div`
   display: none;
   ${media.tablet}{
   display: flex;
+  justify-content: center;
   flex-basis: 60%;
+}
+${media.desktop}{
+  justify-content: flex-end;
 }
 `;
 // Its imported as Link so its able to be styled with styled-components.

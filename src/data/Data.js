@@ -33,7 +33,7 @@ export const FAQText = {
 // Message
 
 export const MessageText = {
-    text:'Lanzamiento en Bolivia solo por invitacion de referido, registrate haciendo',
+    text:'Disponibilidad solo por medio de invitacion de un referido, registrate haciendo',
     span:'click aqui',
 }
 

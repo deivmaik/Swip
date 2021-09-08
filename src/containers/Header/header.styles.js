@@ -6,17 +6,14 @@ import {FaBars} from 'react-icons/fa'
 export const Wrapper = styled.nav`
   position: sticky;
   top: 0;
-  width: 100%;
   background: ${colors.light};
   height: 8rem;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   z-index: 10;
-  ${media.desktop}{
-    width: 95%;
-    padding: 0 5rem;
-    justify-content: space-between;
-    
+  ${media.tablet}{
+    padding: 0 4rem;
+    justify-content: space-around;
 }
 `
 // Its imported as Link so its able to be styled with styled-components.
@@ -25,23 +22,6 @@ export const NavLink = styled(Link)`
   align-items: center;
   
 `
-
-// This will be used later for the hamburger menu 
-export const Bars = styled(FaBars)`
-  display: block;
-    /* position: absolute; */
-    top: 0;
-    right: 0;
-    transform: translate(-100%, 75%);
-    font-size: 1.8rem;
-    cursor: pointer;
-  ${media.desktop}{
-    display: none;
-  color: #fff;
-  }
-`
-
-
 export const NavBtn = styled.nav`
   display: flex;
   align-items: center;
