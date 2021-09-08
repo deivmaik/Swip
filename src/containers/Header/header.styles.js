@@ -1,34 +1,28 @@
 import styled from 'styled-components'
 import { colors, media } from '../../global'
-import { NavLink as Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import {FaBars} from 'react-icons/fa'
 
 export const Wrapper = styled.nav`
+  position: sticky;
+  top: 0;
+  width: 100%;
   background: ${colors.light};
   height: 8rem;
   display: flex;
   justify-content: space-around;
   z-index: 10;
   ${media.desktop}{
-    padding: 0 10rem;
+    width: 95%;
+    padding: 0 5rem;
     justify-content: space-between;
     
 }
 `
 // Its imported as Link so its able to be styled with styled-components.
 export const NavLink = styled(Link)`
-  color: #fff;
   display: flex;
   align-items: center;
-  text-decoration: none;
-  height: 100%;
-  /* This is the activeStyle class  */
-  &.active {
-    color: ${colors.activeColor};
-  }
-  ${media.desktop}{
-    flex-basis: 100%;
-  }
   
 `
 

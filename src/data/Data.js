@@ -91,3 +91,21 @@ export const instructions = [
         desc:'Apoya tu swip al telefono que deseas compartir tu informacion.'
     }
 ]
+
+export const links = [
+    {
+        id: 0,
+        text:'¿como funciona?',
+        hash:'#hiw',
+    },
+    {
+        id: 1,
+        text:'modelos',
+        hash:'#swips',
+    },
+    {
+        id: 2,
+        text:'contacto',
+        hash:'#contact',
+    }
+]

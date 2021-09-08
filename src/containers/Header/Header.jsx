@@ -1,20 +1,28 @@
-import React from "react";
-import { ReactComponent as Logo } from "../../assets/svg/swiplogo.svg";
-import Navbar from "../../components/Navbar/Navbar";
-import Button from "../../components/Button/Button";
+import React from 'react'
+import { Link } from 'react-router-dom'
+import { BrowserRouter as Router } from 'react-router-dom'
 
-import { Wrapper, NavLink, NavBtn } from "./header.styles";
+import { ReactComponent as Logo } from '../../assets/svg/swiplogo.svg'
+
+import Navbar from '../../components/Navbar/Navbar'
+import Button from '../../components/Button/Button'
+
+import { Wrapper, NavLink, NavBtn } from './header.styles'
 
 const Header = () => {
   return (
     <Wrapper>
-      <Logo fill="black" />
+      <Router>
+        <NavLink to='/'>
+          <Logo fill='black' />
+        </NavLink>
+      </Router>
       <Navbar />
       <NavBtn>
         <Button />
       </NavBtn>
     </Wrapper>
-  );
-};
+  )
+}
 
-export default Header;
+export default Header

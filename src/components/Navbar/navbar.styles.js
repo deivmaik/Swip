@@ -1,10 +1,10 @@
 import styled from 'styled-components'
-import { NavLink as Link } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import { colors, media } from '../../global'
 
 export const NavMenu = styled.div`
   display: none;
-  ${media.desktop}{
+  ${media.tablet}{
   display: flex;
   flex-basis: 60%;
 }
@@ -18,8 +18,7 @@ export const NavLink = styled(Link)`
   padding: 0 1.5rem;
   height: 100%;
   cursor: pointer;
-  /* This is the activeStyle class  */
-  &.active {
+  &.active, :hover {
     color: ${colors.important};
   }
 `;
