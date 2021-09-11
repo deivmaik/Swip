@@ -5,13 +5,9 @@ import { FaFacebookF } from 'react-icons/fa'
 import { RiInstagramLine } from 'react-icons/ri'
 
 import { Title, SMItem } from './socialMedia.styles'
+import { openInNewTab } from '../../helpers/functions'
 
 function SocialMedia() {
-  const openInNewTab = (url) => {
-    const newWindow = window.open(url, '_blank', 'noopener,noreferrer')
-    if (newWindow) newWindow.opener = null
-  }
-
   return (
     <>
       <Title>Siguenos en</Title>

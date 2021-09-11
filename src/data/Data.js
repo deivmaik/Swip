@@ -12,8 +12,9 @@ export const SliderText = {
 }
 
 // Exporting objects for ContactInfo
-export const ContactInfo = {
-    email:'contacto@miswip.com',
+export const contactInfo = {
+    title:'Contacto',
+    email:'soporte@miswip.com',
     whatsapp:'+569 123456789'
 }
 
@@ -21,6 +22,13 @@ export const ContactInfo = {
 export const faq = {
     title:'Preguntas frecuentes',
     end:'¿Tienes mas preguntas? ',
+}
+
+// Legal 
+export const legal = {
+    title:'Legal',
+    terms:'Terminos de uso ',
+    privacy:'Politicas de privacidad'
 }
 
 // FAQ new
@@ -33,7 +41,7 @@ export const questions = [
     {
         id: 1,
         q:'¿Donde debo poner mi swip?',
-        r:'Por favor mira este video para saber donde ubicar tu swip de acuerdo a tu smarthphone. (ver video).'
+        r:'En los instructivos impresos puedes ver donde ubicar tu swip.'
     },
     {
         id: 2,

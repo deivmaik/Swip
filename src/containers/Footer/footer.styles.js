@@ -5,21 +5,25 @@ export const Wrapper = styled.section`
 height: 100%;
 background-color: ${colors.dark};
 ${media.desktop}{
-    height: 100vh;
+    height: 85vh;
   }
 `
 
 export const Container = styled.div`
 ${media.desktop}{
-display: grid;
-grid-template-columns:  35% 32.5% 32.5%; ;
-grid-template-rows: 1fr;
+  padding-top: 7.5vh;
+  display: grid; 
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr ;
+
+gap: 0px;
 }
 `
 
 export const MadeIn = styled.p`
 margin : 2rem;
-padding: 2rem;
+padding: 5rem;
 text-align: center;
 color: ${colors.light};
+
 `

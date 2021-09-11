@@ -1,49 +1,26 @@
-import React, { Fragment } from "react";
-import { Link } from "react-router-dom";
-import { ReactComponent as Logo } from "../../assets/svg/swiplogo.svg";
+import React from 'react'
+import { ReactComponent as Logo } from '../../assets/svg/swiplogo.svg'
+import { BrowserRouter as Router } from 'react-router-dom'
 
-import SocialMedia from "../SocialMedia/SocialMedia";
+import ContactCard from './ContactCard'
+import SocialMedia from '../SocialMedia/SocialMedia'
+import Legal from '../Legal/Legal.jsx'
 
-import { HiOutlineMail } from "react-icons/hi";
-import { RiWhatsappLine } from "react-icons/ri";
+import { Wrapper, Redirect } from './contact.styles'
 
-import { Wrapper, LogoContainer, Title, Text } from "./contact.styles";
-
-// This function has information from data.js inside the data folder
-function Contact({ email, whatsapp }) {
+function Contact() {
   return (
     <Wrapper>
-      <LogoContainer to="/">
-        <Logo fill="white" />
-      </LogoContainer>
-      {/* It could be empty brackets without the Fragment, it's just there for semantic purposes */}
-      <Fragment>
-        <Title>Contacto</Title>
-        <Link to="#">
-          <Text>
-            <HiOutlineMail />
-            {email.toLowerCase()}
-          </Text>
-        </Link>
-        <Link to="#">
-          <Text>
-            <RiWhatsappLine />
-            {whatsapp.toLowerCase()}
-          </Text>
-        </Link>
-      </Fragment>
+      <Router>
+        <Redirect to='/'>
+          <Logo fill='white' />
+        </Redirect>
+      </Router>
+      <ContactCard />
       <SocialMedia />
-      <Fragment>
-        <Title>Legal</Title>
-        <Link to="#">
-          <Text>Terminos de uso</Text>
-        </Link>
-        <Link to="#">
-          <Text>Politicas de privacidad</Text>
-        </Link>
-      </Fragment>
+      <Legal />
     </Wrapper>
-  );
+  )
 }
 
-export default Contact;
+export default Contact
