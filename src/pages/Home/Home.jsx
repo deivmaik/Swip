@@ -9,9 +9,9 @@ const Home = () => {
   return (
     <>
       <Hero />
-      <HIW id='hiw' />
+      {/* <HIW id='hiw' />
       <Swips id='swips' />
-      <Footer id='contact' />
+      <Footer id='contact' /> */}
     </>
   )
 }

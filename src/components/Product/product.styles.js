@@ -1,8 +1,14 @@
 import styled from 'styled-components'
 import { media } from '../../global'
 
-export const Wrapper = styled.div`
-${media.desktop}{
-    max-height: 75vh;
+export const Img = styled.img`
+display: none;
+${media.tablet}{
+    display: block;
+    width: 100%;
 }
+${media.desktop}{
+    width: 40%;
+}
+
 `

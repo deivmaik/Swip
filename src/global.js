@@ -21,7 +21,7 @@ export const sizes = {
     regular: 375,
     tablet: 768,
     desktop: 992,
-    wideScreen: 1170,
+    wideScreen: 1260,
   }
   
   // em in breakpoints works better cross-browser
@@ -32,5 +32,5 @@ export const sizes = {
     tablet:     `@media(min-width: ${sizes.tablet / 16}em)`,
     tabletOnly: `@media(min-width: ${sizes.tablet / 16}em) and (max-width: ${(sizes.desktop - 1) / 16}em)`,
     desktop:    `@media(min-width: ${sizes.desktop / 16}em)`,
-    wideScreen: `@media(min-width: ${sizes.giant / 16}em)`,
+    wideScreen: `@media(min-width: ${sizes.wideScreen / 16}em)`,
   }

@@ -1,14 +1,13 @@
-import React from "react";
-import { ReactComponent as Phones } from "../../assets/svg/product.svg";
-
-import { Wrapper } from "./product.styles";
+import React from 'react'
+import Phones from '../../assets/png/product.png'
+import { Img } from './product.styles'
 
 const Product = () => {
   return (
-    <Wrapper>
-      <Phones />
-    </Wrapper>
-  );
-};
+    <>
+      <Img src={Phones} alt='Phones' />
+    </>
+  )
+}
 
-export default Product;
+export default Product

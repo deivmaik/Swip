@@ -2,8 +2,10 @@ import styled from 'styled-components'
 import { media , colors } from '../../global'
 
 export const Wrapper = styled.div`
-
 background-color: ${colors.white};
+${media.tablet}{
+    max-width: 50%;
+}
 ${media.desktop}{
     max-width: 35%;
 }
@@ -19,16 +21,29 @@ line-height: 160%;
 ${media.regular}{
     font-size: 4.4rem;
 }
+${media.tablet}{
+    font-size: 3.6rem;
+}
 
+${media.desktop}{
+    font-size: 4.4rem;
+}
 `
 
 export const Desc = styled.p`
 margin-top: 0;
 font-size: 1.6rem;
 line-height: 160%;
-color:  ${colors.secondaryText};
+white-space: pre-line;
+color:  ${colors.grey};
 
 ${media.regular}{
+    font-size: 2rem;
+}
+${media.tablet}{
+    font-size: 1.6rem;
+}
+${media.desktop}{
     font-size: 2rem;
 }
 `
