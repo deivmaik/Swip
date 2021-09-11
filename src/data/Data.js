@@ -18,16 +18,29 @@ export const ContactInfo = {
 }
 
 // FAQ 
-export const FAQText = {
+export const faq = {
     title:'Preguntas frecuentes',
-    q1:'¿Es seguro?',
-    r1:'Si! swip es totalmente seguro, solo ingresas tus nombres de usuario, no solicitamos o guardamos ningun tipo de contraseña.',
-    q2:'¿Donde debo poner mi swip?',
-    r2:'Por favor mira este video para saber donde ubicar tu swip de acuerdo a tu smarthphone. (ver video).',
-    q3:'¿Es necesaria una coneccion a internet para que funcione swip?',
-    r3:'Swip no necesita conexion a internet, la unica persona que necesita una conexion a internet es quien recibe tus datos, en caso no tengan, pueden hacerlo una vez esten conectados.',
-    end:'¿Tienes mas preguntas? Haz click aqui',
+    end:'¿Tienes mas preguntas? ',
 }
+
+// FAQ new
+export const questions = [
+    {
+        id: 0,
+        q:'¿Es seguro?',
+        r:'Si! swip es totalmente seguro, solo ingresas tus nombres de usuario, no solicitamos o guardamos ningun tipo de contraseña.'
+    },
+    {
+        id: 1,
+        q:'¿Donde debo poner mi swip?',
+        r:'Por favor mira este video para saber donde ubicar tu swip de acuerdo a tu smarthphone. (ver video).'
+    },
+    {
+        id: 2,
+        q:'¿Es necesaria una coneccion a internet para que funcione swip?',
+        r:'Swip no necesita conexion a internet, la unica persona que necesita una conexion a internet es quien recibe tus datos, en caso no tengan, pueden hacerlo una vez esten conectados.'
+    },
+]
 
 // Message
 

@@ -1,5 +1,5 @@
-import React from "react";
-import { instructions } from "../../data/Data";
+import React from 'react'
+import { instructions } from '../../data/Data'
 
 import {
   Card,
@@ -7,7 +7,7 @@ import {
   Number,
   Title,
   Subtitle,
-} from "./instructionsCard.styles";
+} from './instructionsCard.styles'
 
 const InstructionsCard = instructions.map((instructions, id) => (
   <Card key={instructions.number + id}>
@@ -17,6 +17,6 @@ const InstructionsCard = instructions.map((instructions, id) => (
     <Title>{instructions.title}</Title>
     <Subtitle>{instructions.desc}</Subtitle>
   </Card>
-));
+))
 
-export default InstructionsCard;
+export default InstructionsCard

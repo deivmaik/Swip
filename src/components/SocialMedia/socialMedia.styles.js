@@ -11,4 +11,5 @@ color: ${colors.secondaryText};
 // This gets all the styles from Text in .contact 
 export const SMItem = styled(Text)`
   ${Text};
+  cursor: pointer; 
   `

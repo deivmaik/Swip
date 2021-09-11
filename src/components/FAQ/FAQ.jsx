@@ -1,19 +1,18 @@
-import React from "react";
-import { Wrapper, Title, Question, Answer } from "./faq.styles";
+import React from 'react'
+import FaqCard from './FaqCard'
+import { Link } from 'react-router-dom'
+import { Wrapper, Text, End } from './faq.styles'
 
-function FAQ({ title, q1, r1, q2, r2, q3, r3, end }) {
+function FAQ({ title, end }) {
   return (
     <Wrapper>
-      <Title>{title}</Title>
-      <Question>{q1}</Question>
-      <Answer>{r1}</Answer>
-      <Question>{q2}</Question>
-      <Answer>{r2}</Answer>
-      <Question>{q3}</Question>
-      <Answer>{r3}</Answer>
-      <Question>{end}}</Question>
+      <Text>{title}</Text>
+      {FaqCard}
+      <Link>
+        <End>{end}Haz click aqui</End>
+      </Link>
     </Wrapper>
-  );
+  )
 }
 
-export default FAQ;
+export default FAQ

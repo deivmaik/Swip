@@ -1,37 +1,17 @@
 import styled from 'styled-components'
-import { colors, media } from '../../global'
+import { colors } from '../../global'
 
 export const Wrapper = styled.div`
-margin: 0 2rem 0 2rem;
-${media.desktop}{
-    margin: 0 10rem 0 2rem;
-}
+display: block;
 `
-
-export const Title = styled.p`
+export const Text = styled.h3`
+text-align: center;
 font-weight: 500;
 font-size: 2.2rem;
 color: ${colors.light}
 `
-export const Question = styled.p`
-font-weight: 500;
-font-size: 1.8rem;
-color: ${colors.secondaryText};
-${media.desktop}{
+export const End = styled.p`
+text-align: center;
 font-size: 1.6rem;
-}
-`
-export const Answer = styled.p`
-font-weight: 300;
-font-size: 1.6rem;
-line-height: 160%;
-color: ${colors.light};
-${media.desktop}{
-font-size: 1.4rem;
-}
-
-/* body */
-padding : 2rem;
-background: #1C1C1C;
-border-radius: 1rem;
+color: ${colors.grey}
 `

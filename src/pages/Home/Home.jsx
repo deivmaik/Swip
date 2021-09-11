@@ -10,8 +10,8 @@ const Home = () => {
     <>
       <Hero />
       {/* <HIW id='hiw' />
-      <Swips id='swips' />
-      <Footer id='contact' /> */}
+      <Swips id='swips' /> */}
+      <Footer id='contact' />
     </>
   )
 }
