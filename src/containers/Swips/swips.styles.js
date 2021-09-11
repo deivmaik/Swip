@@ -1,5 +1,5 @@
 import styled  from 'styled-components'
-import { colors, media } from '../../global'
+import { media } from '../../global'
 
 export const Wrapper = styled.section`
 margin: 0 ;

@@ -1,7 +1,6 @@
 import styled from 'styled-components'
 import { colors, media } from '../../global'
 import { Link } from "react-router-dom";
-import {FaBars} from 'react-icons/fa'
 
 export const Wrapper = styled.nav`
   position: sticky;

@@ -1,8 +1,8 @@
-import React from "react";
+import React from 'react'
 
-import { howItWorks } from "../../data/Data";
+import { howItWorks } from '../../data/Data'
 
-import { Wrapper, Container, Title, Subtitle } from "./sideContent.styles";
+import { Wrapper, Title, Subtitle } from './sideContent.styles'
 
 const SideContent = () => {
   return (
@@ -10,7 +10,7 @@ const SideContent = () => {
       <Title>{howItWorks.title}</Title>
       <Subtitle>{howItWorks.text}</Subtitle>
     </Wrapper>
-  );
-};
+  )
+}
 
-export default SideContent;
+export default SideContent

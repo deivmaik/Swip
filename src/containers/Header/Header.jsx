@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 import { BrowserRouter as Router } from 'react-router-dom'
 
 import { ReactComponent as Logo } from '../../assets/svg/swiplogo.svg'

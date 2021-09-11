@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 
 import { SiTiktok } from 'react-icons/si'
 import { FaFacebookF } from 'react-icons/fa'
