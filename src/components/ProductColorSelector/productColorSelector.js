@@ -3,7 +3,12 @@ import { media } from '../../global'
 
 export const Container = styled.div`
 ${media.tablet}{
+    padding: 5rem 10rem ;
+   
+}
+${media.desktop}{
     padding: 10rem 5rem ;
+
     display:grid;
     grid-row-start: 1;
     grid-column-start: 2;
@@ -15,12 +20,18 @@ ${media.tablet}{
 
 export const Title = styled.h2`
 margin: 0;
-padding: 4rem 2rem 1rem;
+padding: 4rem 0 2rem;
 font-weight: bold;
-font-size: 3.3rem;
-line-height: 4rem;
 color: #000000;
 text-align: center;
+font-size: 2.6rem;
+line-height: 3.3rem;
+
+${media.regular}{
+    padding: 4rem 2rem 2rem;
+    font-size: 3.3rem;
+    line-height: 4rem;
+}
 ${media.desktop}{
 font-size: 4.4rem;
 line-height: 6rem;
@@ -29,11 +40,15 @@ line-height: 6rem;
 
 export const Desc = styled.p`
 margin: 0;
-padding: 0 2rem 4rem ;
+padding: 0 0 4rem ;
 font-weight: 500;
-font-size: 1.8rem;
+font-size: 1.6rem;
 color: #666565;
 text-align: center;
+${media.regular}{
+    padding: 0 2rem 4rem ;
+    font-size: 1.8rem;
+}
 ${media.desktop}{
 font-size: 2rem;
 padding: 0 2rem 0 ;
@@ -41,7 +56,6 @@ padding: 0 2rem 0 ;
 `
 
 export const Colors = styled.div`
-border: 1px solid #e6e6e6;
 display: flex;
 justify-content: center;
 
