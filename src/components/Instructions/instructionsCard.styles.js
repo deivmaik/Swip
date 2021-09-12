@@ -32,14 +32,14 @@ justify-content : center;
 /* Background styles */
 margin: 0;
 padding: 1rem 2.5rem ;
-background: rgba(255, 255, 255, 0.2);
+background: ${colors.important};
 backdrop-filter: blur(12px);
 border-radius: 1rem;
 /* Font styles */
 font-weight: 600;
 font-size: 2rem;
 line-height: 160%;
-color: ${colors.light};
+color: ${colors.dark};
 
 ${media.regular}{
     padding: 1.5rem 3rem ;
