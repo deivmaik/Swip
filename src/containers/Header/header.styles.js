@@ -10,10 +10,15 @@ export const Wrapper = styled.nav`
   display: flex;
   justify-content: center;
   z-index: 10;
-  ${media.tablet}{
+  ${media.regular}{
+    justify-content: space-between;
+    padding: 0 2rem;
+  }
+ 
+  ${media.desktop}{
     padding: 0 4rem;
     justify-content: space-around;
-}
+  }
 `
 // Its imported as Link so its able to be styled with styled-components.
 export const NavLink = styled(Link)`

@@ -6,7 +6,7 @@ export const NavMenu = styled.div`
   display: none;
   ${media.tablet}{
   display: flex;
-  justify-content: center;
+  justify-content: end;
   flex-basis: 60%;
 }
 ${media.desktop}{
