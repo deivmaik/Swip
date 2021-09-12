@@ -1,19 +1,18 @@
-import React from "react";
-import SideContent from "../../components/SideContent/SideContent";
-import Instructions from "../../components/Instructions/Instructions";
-import Video from "../../components/Video/Video";
+import React from 'react'
+import SideContent from '../../components/SideContent/SideContent'
+import Instructions from '../../components/Instructions/Instructions'
+import Video from '../../components/Video/Video'
 
-import { Wrapper } from "./hiw.styles";
+import { Wrapper } from './hiw.styles'
 
 const HIW = () => {
-
   return (
     <Wrapper>
-      <SideContent  />
+      <SideContent />
       <Instructions />
-      <Video  />
+      <Video />
     </Wrapper>
-  );
-};
+  )
+}
 
-export default HIW;
+export default HIW

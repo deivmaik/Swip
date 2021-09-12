@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { colors, media } from '../../global'
 
 export const Wrapper = styled.div`
+
 padding : 10% 0 10% 0;
 display : flex;
 align-items : center;
@@ -11,8 +12,8 @@ height : 50vh;
 background:${colors.dark};
 
 ${media.desktop}{
+    height: 85vh;
     padding : 0;
-    height : 100vh;
 }
 `
     

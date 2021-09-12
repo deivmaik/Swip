@@ -10,7 +10,7 @@ background-color: ${colors.dark};
 
 
 ${media.desktop}{
-  max-height: 100vh;
+  max-height: 85vh;
   display: grid; 
 
 grid-template-rows: 1fr;

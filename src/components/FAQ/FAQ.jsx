@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 import { Wrapper, Text, End } from './faq.styles'
 import { faq } from '../../data/Data'
 
-function FAQ({ title, end }) {
+function FAQ() {
   return (
     <Wrapper>
       <Text>{faq.title}</Text>

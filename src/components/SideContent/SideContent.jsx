@@ -4,7 +4,7 @@ import { howItWorks } from '../../data/Data'
 
 import { Wrapper, Title, Subtitle } from './sideContent.styles'
 
-const SideContent = () => {
+function SideContent() {
   return (
     <Wrapper>
       <Title>{howItWorks.title}</Title>

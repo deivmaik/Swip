@@ -3,7 +3,6 @@ import { media } from '../../global'
 
 export const Wrapper = styled.div`
 ${media.desktop}{
-    padding: 35% 0;
-    max-height: 100vh;
+    padding: 15% 0 
 }
 `

@@ -7,6 +7,7 @@ margin: 0 0;
 background-color: ${colors.dark};
 
 ${media.desktop}{
+    height: 85vh;
     padding: 0 ;
 
     display: grid;

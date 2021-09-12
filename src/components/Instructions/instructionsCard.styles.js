@@ -4,8 +4,14 @@ import { colors, media } from '../../global'
 export const Card = styled.div`
 display: grid; 
 background-color: ${colors.dark};
-grid-template-rows: 1fr 1fr 1fr;
+grid-template-rows: 1fr 1fr;
 grid-template-columns: 1fr 1fr 1fr;
+
+${media.desktop}{
+height: 25%;
+margin-top: 5%;
+}
+
 `
 export const Container = styled.div`
 /* Flex aligns it to center */
@@ -15,10 +21,10 @@ justify-content : center;
 /* Grid to position the container inside the layout */
 grid-row-start: 1;
 grid-column-start: 1;
-grid-row-end: 4;
+
+grid-row-end: 3;
 grid-column-end: 2;
 `
-
 export const Number = styled.p`
 display : flex;
 align-items : center;
@@ -45,6 +51,7 @@ export const Title = styled.p`
 /* Grid styles */
 grid-row-start: 1;
 grid-column-start: 2;
+
 grid-row-end: 2;
 grid-column-end: 4;
 /* Background styles */
@@ -68,7 +75,8 @@ export const Subtitle = styled.p`
 /* Grid styles */
 grid-row-start: 2;
 grid-column-start: 2;
-grid-row-end: 4;
+
+grid-row-end: 3;
 grid-column-end: 4;
 /* Background styles */
 margin: 0;
