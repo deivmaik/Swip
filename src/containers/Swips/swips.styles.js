@@ -2,15 +2,18 @@ import styled  from 'styled-components'
 import { media } from '../../global'
 
 export const Wrapper = styled.section`
+border: 1px solid blue;
+
 margin: 0 ;
 padding: 0 2rem;
 height: 100%;
-background-color: #f5f5f5;
-${media.desktop}{
+background-color: #F5FFFF;
+${media.tablet}{
     margin: 0 0;
-    height: 100vh;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    height: 87.5vh;
+    display: grid;
+    grid-template-rows: 1fr;
+   grid-template-columns: 1fr 1fr 1fr;
+    
 }
 `

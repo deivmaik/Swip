@@ -85,6 +85,37 @@ export const swips = [
         name:'swip diamante'
     }
 ]
+export const productDesc = {
+    title:'elige el color que mas se adapte a tu personalidad',
+    subtitle:'cada swip es tan unico como vos!',
+}
+
+export const tagColors = [
+    {
+        id: 0,
+        name:'swip blanco',
+        color:'#ffffff',
+        img:'https://i.ibb.co/YT8qVvN/Ellipse-77.png',
+    },
+    {
+        id: 1,
+        name:'swip oscuro',
+        color:'#171717',
+        img:'https://i.ibb.co/VpZX4J0/Ellipse-78.png',
+    },
+    {
+        id: 2,
+        name:'swip rosa',
+        color:'#FDAFAF',
+        img:'https://i.ibb.co/T2Htsng/Ellipse-79.png',
+    },
+    {
+        id: 3,
+        name:'swip diamante',
+        color:'#EBEBEB',
+        img:'https://i.ibb.co/HzcVVqP/Ellipse-80.png',
+    }
+]
 
 export const howItWorks = { 
     title:'Asi funciona!',

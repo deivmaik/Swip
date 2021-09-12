@@ -2,6 +2,8 @@ import styled from 'styled-components';
 import { media} from '../../global'
 
 export const Container = styled.div`
+border: 1px solid blue;
+
 padding : 5%;
 display: grid; 
 justify-content: center;
