@@ -1,63 +1,68 @@
+// Top Message
+export const MessageText = {
+    text:'Disponibilidad  sólo por medio de invitacion de un referido, registrate haciendo',
+    span:'click aqui',
+}
 
-// Exporting Objects to make it easier to modify using js
+
+// NavBar
+export const links = [
+    {
+        id: 0,
+        text:'¿cómo funciona?',
+        hash:'#hiw',
+    },
+    {
+        id: 1,
+        text:'modelos',
+        hash:'#swips',
+    },
+    {
+        id: 2,
+        text:'contacto',
+        hash:'#contact',
+    }
+]
+
+// Hero
 export const HeroDesc = {
-    title:'comparte todas tus redes sociales en un instante',
+    title:'comparte todas tus redes sociales en un instante ',
     subtitle:'Facebook ,Instagram ,Linkedin. ... Lo que quieras, a un solo swip.',
     hero:'¿como funciona? >'
 };
 
-// Exporting objects for Sliders
-export const SliderText = {
-    message:'Comparte todas tus redes sociales'
+// How it works
+export const howItWorks = {
+    title:'¡Así funciona!',
+    text:'Aprende lo fácil que es usar tu swip y compartir tus redes sociales con un solo toque.',
 }
 
-// Exporting objects for ContactInfo
-export const contactInfo = {
-    title:'Contacto',
-    email:'soporte@miswip.com',
-    whatsapp:'+569 123456789'
-}
-
-// FAQ 
-export const faq = {
-    title:'Preguntas frecuentes',
-    end:'¿Tienes mas preguntas? ',
-}
-
-// Legal 
-export const legal = {
-    title:'Legal',
-    terms:'Terminos de uso ',
-    privacy:'Politicas de privacidad'
-}
-
-// FAQ new
-export const questions = [
+export const instructions = [
     {
         id: 0,
-        q:'¿Es seguro?',
-        r:'Si! swip es totalmente seguro, solo ingresas tus nombres de usuario, no solicitamos o guardamos ningun tipo de contraseña.'
+        number: 1,
+        title:'Crea tu perfil',
+        desc:'Elige un nombre de usuario para representarte online. '
     },
     {
-        id: 1,
-        q:'¿Donde debo poner mi swip?',
-        r:'En los instructivos impresos puedes ver donde ubicar tu swip.'
+        id: 0,
+        number: 2,
+        title:'Agrega tus redes sociales',
+        desc:'Solo necesitas agregar los nombres de usuario que usas.'
     },
     {
-        id: 2,
-        q:'¿Es necesaria una coneccion a internet para que funcione swip?',
-        r:'Swip no necesita conexion a internet, la unica persona que necesita una conexion a internet es quien recibe tus datos, en caso no tengan, pueden hacerlo una vez esten conectados.'
-    },
+        id: 0,
+        number: 3,
+        title:'Comparte tu swip',
+        desc:'Apoya tu swip en el telefono que deseas para compartir tu informacion'
+    }
 ]
 
-// Message
-
-export const MessageText = {
-    text:'Disponibilidad solo por medio de invitacion de un referido, registrate haciendo',
-    span:'click aqui',
-}
-
 // swip tags
+export const productDesc = {
+    title:'elige el color que mas se adapte a tu personalidad',
+    subtitle:'¡cada swip es tan único como vos!',
+}
 
 export const swips = [
     {
@@ -85,10 +90,7 @@ export const swips = [
         name:'swip diamante'
     }
 ]
-export const productDesc = {
-    title:'elige el color que mas se adapte a tu personalidad',
-    subtitle:'cada swip es tan unico como vos!',
-}
+
 
 export const tagColors = [
     {
@@ -117,46 +119,51 @@ export const tagColors = [
     }
 ]
 
-export const howItWorks = { 
-    title:'Asi funciona!',
-    text:'En unos simples pasos aprende cuan facil es usar tu swip y compartir tus redes sociales con solo un toque.',
-}
-
-export const instructions = [
+// FAQ 
+export const questions = [
     {
         id: 0,
-        number: 1,
-        title:'Crea tu perfil de usuario',
-        desc:'Elige un nombre de usuario unico para representarte online.'
-    },
-    {
-        id: 0,
-        number: 2,
-        title:'Agrega tus redes sociales',
-        desc:'Solo necesitas agregar los nombres de usuario que usas.'
-    },
-    {
-        id: 0,
-        number: 3,
-        title:'Comparte tu swip',
-        desc:'Apoya tu swip al telefono que deseas compartir tu informacion.'
-    }
-]
-
-export const links = [
-    {
-        id: 0,
-        text:'¿como funciona?',
-        hash:'#hiw',
+        q:'¿Es seguro?',
+        r:'¡Si! swip es totalmente seguro, sólo necesitas ingresar tus nombres de usuario. No solicitamos o guardamos ningún tipo de contraseña. '
     },
     {
         id: 1,
-        text:'modelos',
-        hash:'#swips',
+        q:'¿Que necesito tener activado para compartir mi informacion?',
+        r:'Solo necesitas tener tu conexion a internet movil y bluetooth activado al momento de compartir tu swip.'
     },
     {
         id: 2,
-        text:'contacto',
-        hash:'#contact',
-    }
+        q:'¿Es necesaria una conexión a internet para que funcione swip?',
+        r:'Swip no necesita conexión a internet. La unica persona que necesita una conexion a internet, es quien recibe tus datos. En caso contrario, pueden hacerlo una vez esten conectados.'
+    },
 ]
+
+// Exporting objects for Sliders
+export const SliderText = {
+    message:'Comparte todas tus redes sociales'
+}
+
+// Exporting objects for ContactInfo
+export const contactInfo = {
+    title:'Contacto',
+    email:'soporte@miswip.com',
+    whatsapp:'+569 123456789'
+}
+
+// FAQ
+export const faq = {
+    title:'Preguntas frecuentes',
+    end:'¿Tienes mas preguntas? ',
+}
+
+// Legal
+export const legal = {
+    title:'Legal',
+    terms:'Terminos de uso ',
+    privacy:'Politicas de privacidad'
+}
+
+
+
+
+
