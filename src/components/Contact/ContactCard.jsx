@@ -8,6 +8,8 @@ import { contactInfo } from '../../data/Data'
 
 import { Title, Text } from './contact.styles'
 
+import { openWhatsapp } from '../../helpers/functions'
+
 function ContactCard() {
   return (
     <>
@@ -19,7 +21,7 @@ function ContactCard() {
         </Text>
       </Link>
       <Link to='#'>
-        <Text>
+        <Text onClick={() => openWhatsapp()}>
           <RiWhatsappLine />
           {contactInfo.whatsapp.toLowerCase()}
         </Text>

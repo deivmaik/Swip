@@ -5,6 +5,7 @@ import { ReactComponent as Logo } from '../../assets/svg/swiplogo.svg'
 
 import Navbar from '../../components/Navbar/Navbar'
 import Button from '../../components/Button/Button'
+import { openWhatsapp } from '../../helpers/functions'
 
 import { Wrapper, NavLink, NavBtn } from './header.styles'
 
@@ -17,7 +18,7 @@ const Header = () => {
         </NavLink>
       </Router>
       <Navbar />
-      <NavBtn>
+      <NavBtn onClick={() => openWhatsapp()}>
         <Button />
       </NavBtn>
     </Wrapper>

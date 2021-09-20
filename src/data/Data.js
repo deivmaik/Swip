@@ -64,60 +64,42 @@ export const productDesc = {
     subtitle:'¡cada swip es tan único como vos!',
 }
 
-export const swips = [
-    {
-        img:'https://i.ibb.co/4gQ7w7g/white-Swip.png',
-        id: 0,
-        // img:'../png/pink.png',
-        name:'swip blanco'
-    },
-    {
-        img:'https://i.ibb.co/mtdMWZY/darkSwip.png',
-        id: 1,
-        // img:'../png/pink.png',
-        name:'swip oscuro'
-    },
-    {
-        img:'https://i.ibb.co/fQZZ6mJ/pinkSwip.png',
-        id: 2,
-        // img:'../png/pink.png',
-        name:'swip rosa'
-    },
-    {
-        img:'https://i.ibb.co/5RPvmHV/greySwip.png',
-        id: 3,
-        // img:'../png/pink.png',
-        name:'swip diamante'
-    }
-]
-
-
+// Swips
 export const tagColors = [
     {
         id: 0,
         name:'swip blanco',
         color:'#ffffff',
         img:'https://i.ibb.co/YT8qVvN/Ellipse-77.png',
+        preview:'https://i.ibb.co/m6Xtj1z/Group-121.jpg',
+        price:'79 Bs.'
     },
     {
         id: 1,
         name:'swip oscuro',
         color:'#171717',
         img:'https://i.ibb.co/VpZX4J0/Ellipse-78.png',
+        preview:'https://i.ibb.co/4R8k7TR/Group-120.jpg',
+        price:'79 Bs.'
     },
     {
         id: 2,
         name:'swip rosa',
         color:'#FDAFAF',
         img:'https://i.ibb.co/T2Htsng/Ellipse-79.png',
+        preview:'https://i.ibb.co/PgBXSXq/Group-118.jpg',
+        price:'79 Bs.'
     },
     {
         id: 3,
         name:'swip diamante',
         color:'#EBEBEB',
         img:'https://i.ibb.co/HzcVVqP/Ellipse-80.png',
+        preview:'https://i.ibb.co/WG7p3t3/Group-119.jpg',
+        price:'99 Bs. '
     }
 ]
+
 
 // FAQ 
 export const questions = [
@@ -128,26 +110,21 @@ export const questions = [
     },
     {
         id: 1,
-        q:'¿Que necesito tener activado para compartir mi informacion?',
-        r:'Solo necesitas tener tu conexion a internet movil y bluetooth activado al momento de compartir tu swip.'
+        q:'¿Que necesita tener la otra persona para recibir mi informacion?',
+        r:'Solo necesitan tener una conexion a internet movil y bluetooth activado al momento de recibir tu informacion.'
     },
     {
         id: 2,
         q:'¿Es necesaria una conexión a internet para que funcione swip?',
-        r:'Swip no necesita conexión a internet. La unica persona que necesita una conexion a internet, es quien recibe tus datos. En caso contrario, pueden hacerlo una vez esten conectados.'
+        r:'tu swip no necesita conexión a internet. La unica persona que necesita una conexion a internet, es quien recibe tus datos.'
     },
 ]
 
-// Exporting objects for Sliders
-export const SliderText = {
-    message:'Comparte todas tus redes sociales'
-}
-
-// Exporting objects for ContactInfo
+// Footer
 export const contactInfo = {
     title:'Contacto',
     email:'soporte@miswip.com',
-    whatsapp:'+569 123456789'
+    whatsapp:'+569 76808720'
 }
 
 // FAQ
@@ -164,6 +141,9 @@ export const legal = {
 }
 
 
-
+// Exporting objects for Sliders
+export const SliderText = {
+    message:'Comparte todas tus redes sociales'
+}
 
 
