@@ -1,30 +1,33 @@
-import React from "react";
+import React from 'react'
+import { openWhatsapp } from '../../helpers/functions'
 
-import { swips } from "../../data/Data";
-
+import { tagColors, productDesc } from '../../data/Data'
 import {
-  SwipWrapper,
-  Img,
-  Text,
   Wrapper,
+  Img,
   Container,
   Title,
-} from "./productSelector.styles";
+  Desc,
+  Colors,
+  Button,
+} from './productSelector.styles'
 
 function ProductSelector() {
-  const displaySwips = swips.map((swip, index) => (
-    <SwipWrapper key={swip.id}>
-      <Img src={swip.img} alt={swip.name} width="200" />
-      <Text>{swip.name}</Text>
-    </SwipWrapper>
-  ));
+  const displayColor = tagColors.map((color, index) => (
+    <Wrapper onClick={() => openWhatsapp()} key={color.id}>
+      <Img src={color.preview} alt={color.name} width='50' />
+      <Button> {color.price} | comprar</Button>
+      {/* <div style={{ color: color.color }}>{color.color}</div> */}
+    </Wrapper>
+  ))
 
   return (
-    <Wrapper>
-      <Title>Selecciona tu swip</Title>
-      <Container>{displaySwips}</Container>
-    </Wrapper>
-  );
+    <Container>
+      <Title>{productDesc.title}</Title>
+      <Desc>{productDesc.subtitle}</Desc>
+      <Colors>{displayColor}</Colors>
+    </Container>
+  )
 }
 
-export default ProductSelector;
+export default ProductSelector
