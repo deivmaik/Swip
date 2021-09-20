@@ -1,27 +1,18 @@
-import React from "react";
+import React from 'react'
 
-import { Wrapper, Text, Span } from "./topMessage.styles";
+import { Wrapper, Text, Span } from './topMessage.styles'
 
-const openInNewTab = (url) => {
-  const newWindow = window.open(url, "_blank", "noopener,noreferrer");
-  if (newWindow) newWindow.opener = null;
-};
+import { openWhatsapp } from '../../helpers/functions'
 
 function TopMessage({ text, span }) {
   return (
-    <Wrapper
-      onClick={() =>
-        openInNewTab(
-          "https://api.whatsapp.com/send/?phone=%2B591123456789&text&app_absent=0whatsapp%20API"
-        )
-      }
-    >
+    <Wrapper onClick={() => openWhatsapp()}>
       <Text>
         {text}
         <Span>{span}</Span>
       </Text>
     </Wrapper>
-  );
+  )
 }
 
-export default TopMessage;
+export default TopMessage

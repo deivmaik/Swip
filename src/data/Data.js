@@ -128,26 +128,21 @@ export const questions = [
     },
     {
         id: 1,
-        q:'¿Que necesito tener activado para compartir mi informacion?',
-        r:'Solo necesitas tener tu conexion a internet movil y bluetooth activado al momento de compartir tu swip.'
+        q:'¿Que necesita tener la otra persona para recibir mi informacion?',
+        r:'Solo necesitan tener una conexion a internet movil y bluetooth activado al momento de recibir tu informacion.'
     },
     {
         id: 2,
         q:'¿Es necesaria una conexión a internet para que funcione swip?',
-        r:'Swip no necesita conexión a internet. La unica persona que necesita una conexion a internet, es quien recibe tus datos. En caso contrario, pueden hacerlo una vez esten conectados.'
+        r:'tu swip no necesita conexión a internet. La unica persona que necesita una conexion a internet, es quien recibe tus datos.'
     },
 ]
 
-// Exporting objects for Sliders
-export const SliderText = {
-    message:'Comparte todas tus redes sociales'
-}
-
-// Exporting objects for ContactInfo
+// Footer
 export const contactInfo = {
     title:'Contacto',
     email:'soporte@miswip.com',
-    whatsapp:'+569 123456789'
+    whatsapp:'+569 76808720'
 }
 
 // FAQ
@@ -164,6 +159,9 @@ export const legal = {
 }
 
 
-
+// Exporting objects for Sliders
+export const SliderText = {
+    message:'Comparte todas tus redes sociales'
+}
 
 
